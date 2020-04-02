@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>二手房首页</title>
+    <link type="text/css" rel="stylesheet" href="css/secondHandHouse.css"/>
+    <script src="js/jquery_1.12.4.js"></script>
+    <script src="js/secondHandHouse.js"></script>
+
+</head>
+<body style="overflow-x: hidden;">
+<!--1.黑色背景头部导航-->
+<div id="d2">
+    <iframe src="common/public_top.html" height="60px"
+            width="100%" scrolling="no" frameborder="no"></iframe>
+</div>
+<!--2.搜索框所在灰色背景两端顶头div-->
+<div id="d3">
+    <!--2.1 主体内容居中div-->
+    <div class="d3c2">
+        <p>
+            <span><a href="#">我爱我家南京</a> </span>
+            &gt;
+            <span><a href="#">南京二手房</a></span>
+        </p>
+        <p>
+            <input type="text" id="searchInfo" name="search" placeholder="区域、商圈、小区、地铁应有尽有"/>
+            <input type="image" id="searchImageBtn" src="image/secondHouse/search.png"/>
+        </p>
+    </div>
+</div>
+<!--3.条件筛选-->
+<div id="d4">
+    <!--3.1主体内容居中div-->
+    <div class="d4c2">
+        <!--3.1.1 选项卡-->
+        <div class="d4c22">
+            <p><a href="#">条件筛选</a></p>
+            <p><a href="#">选房卡</a></p>
+        </div>
+        <!--3.1.2 条件筛选-->
+        <div class="d4c23">
+            <!--3.1.2.1 位置-->
+            <div class="d4c232">
+                <p>位置</p>
+                <ul>
+                    <li>区域</li>
+                    <li>地铁</li>
+                </ul>
+            </div>
+
+            <!--3.1.2.2 所有条件筛选所在div-->
+            <div class="d4c233">
+                <dl id="district">
+                    <dt>全部</dt>
+                    <dd><input type="radio" name="district" value=""/>江宁区</dd>
+                    <dd><input type="radio" name="district" value=""/>秦淮区</dd>
+                </dl>
+            </div>
+            <div class="d4c233">
+                <!--3.1.2.2.1总价-->
+                <dl id="totalpricesection">
+                    <dt>总价</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="maxprice">80万以下</span></dd>
+                    <!--<dd><img src="image/secondHouse/kuang1.png"/><span class="price">80-100万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="price">100-120万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="price">120-150万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="price">150-200万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="price">200-300万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="price">300-500万</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="minprice">500万以上</span></dd>
+                    <dd>
+                        <ul>
+                            <li><input type="text" name="minprice"/></li>
+                            <li>~</li>
+                            <li><input type="text" name="maxprice"/></li>
+                            <li>万元</li>
+                            <li><input type="button" value="确定"/></li>
+                        </ul>
+                    </dd>-->
+                </dl>
+                <!--3.1.2.2.2面积-->
+                <dl id="totalareasection">
+                    <dt>面积</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="maxarea">50㎡以下</span></dd>
+
+                </dl>
+                <!--3.1.2.2.3户型-->
+                <dl>
+                    <dt>户型</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="housetype">一室</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="housetype">二室</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="housetype">三室</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="housetype">四室</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="housetype">五室</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="housetype">五室以上</span></dd>
+                </dl>
+                <!--3.1.2.2.4用途-->
+                <dl>
+                    <dt>用途</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="use">普通住宅</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="use">别墅</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="use">其他</span></dd>
+                </dl>
+                <!--3.1.2.2.5楼层-->
+                <dl>
+                    <dt>楼层</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="floor">低楼层</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="floor">中楼层</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="floor">高楼层</span></dd>
+                </dl>
+                <!--3.1.2.2.6朝向-->
+                <dl>
+                    <dt>朝向</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="faceto">南北</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="faceto">南</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="faceto">东</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="faceto">西</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="faceto">北</span></dd>
+                </dl>
+                <!--3.1.2.2.7楼龄-->
+                <dl>
+                    <dt>楼龄</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="houseage">5年以内</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="houseage">10年以内</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="houseage">15年以内</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="houseage">20年以内</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="houseage">20年以上</span></dd>
+                </dl>
+                <!--3.1.2.2.8装修-->
+                <dl>
+                    <dt>装修</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="decoration">精装修</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="decoration">普通装修</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="decoration">毛坯房</span></dd>
+                </dl>
+                <!--3.1.2.2.9标签-->
+                <dl>
+                    <dt>标签</dt>
+                    <dd><img src="image/secondHouse/kuang2.png"/><span class="lable">近地铁</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">随时看</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">满两年</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">满五年</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">近公园</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">复式</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">跃层</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">loft</span></dd>
+                    <dd><img src="image/secondHouse/kuang1.png"/><span class="lable">隧道口</span></dd>
+                </dl>
+
+            </div>
+            <!--3.1.2.3 更多首期链接div-->
+            <div class="d4c234">
+                <img src="image/secondHouse/shouqi.png"/>
+            </div>
+
+
+        </div>
+        <!--3.1.3条件拼接-->
+        <div class="d4c24">
+            <!--3.1.3.1 条件文字所在div-->
+            <div class="d4c242">
+                条件
+            </div>
+            <!--3.1.3.2 条件拼接div-->
+            <div class="d4c243" id="condition">
+                <!--<p>
+                    <span>毛坯房</span>
+                    <label>X</label>
+                </p>-->
+            </div>
+            <!--3.1.3.3 保存删除所在div-->
+            <div class="d4c244">
+                <img id="save" src="image/secondHouse/save.png"/>
+                <img id="delete" src="image/secondHouse/delete.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+<!--4.数据部分div两端顶头div-->
+<div id="d5">
+    <!--4.1主题内容居中div-->
+    <div class="d5c2">
+        <!--4.1.1左侧数据列表部分div-->
+        <div class="d5c22">
+            <!--4.1.1.1第一行菜单列表div-->
+            <div class="d5c222">
+                <ul>
+                    <li>默认排序</li>
+                    <li>总价</li>
+                    <li>单价</li>
+                    <li>面积</li>
+                    <li>最新发布</li>
+                </ul>
+            </div>
+            <!--4.1.1.2第二行总条数div-->
+            <div class="d5c223" id="totalCount">
+                共找到&nbsp;&nbsp;<strong id="">39510</strong>&nbsp;&nbsp;套房源
+            </div>
+            <!--★4.1.1.3数据列表div-->
+            <div class="d5c224" id="houseList">
+                <!--4.1.1.3.1 数据内容div-->
+                <div class="d5c2242">
+                    <!--4.1.3.1.1 存放图片div-->
+                    <div>
+                        <a href="#">
+                            <img src="image/secondHouse/house/1.jpg" height="195px" width="240px">
+                        </a>
+                    </div>
+                    <!--4.1.3.1.2 存放文字内容div-->
+                    <div>
+                        <!--黑体字标题-->
+                        <h3><a href="#">西方巷一室一厅一卫</a></h3>
+                        <!--房子信息-->
+                        <div>
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    1 室 1 厅 · 36 平米 · 南 · 高楼层/7层 · 精装
+                                </li>
+                                <li>
+                                    <i></i>
+                                    新街口 西方巷 · 距离地铁张府园310米
+                                </li>
+                                <li>
+                                    <i></i>
+                                    1 人关注 · 近30天带看 13 次 · 2018-01-05发布
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>165</strong>万</li>
+                                <li>单价45833元/m²</li>
+                            </ul>
+                        </div>
+                        <!--房子标签-->
+                        <div>
+                            <span>近地铁</span>
+                            <span>满两年</span>
+                            <span>近公园</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--4.1.1.4数据分页所在div-->
+
+        </div>
+        <!--4.1.2 右侧地图部分div-->
+        <!-- 右侧地图    xxxxx-->
+        <div class="d5c23">
+            <a href="#">
+                <img src="image/secondHouse/map.png"/>
+            </a>
+        </div>
+    </div>
+</div>
+    <!--5.尾部引用-->
+ <div id="d6">
+        <iframe src="common/root/publicRoot.html" width="100%" height="314px"
+                scrolling="no" frameborder="0"></iframe>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+        //显示分页信息
+        function showHouseInfo(data) {
+            alert("data" + data);
+            //data  是传递过来的houseINfo集合
+            var str = "";
+            //遍历data集合
+            $(data).each(function (i, item) {
+                str += `
+                <!--4.1.1.3.1 数据内容div-->
+                <div class="d5c2242">
+                    <!--4.1.3.1.1 存放图片div-->
+                    <div>
+                        <a href="#">
+                            <img src="${item.hpurl}" height="195px" width="240px">
+                        </a>
+                    </div>
+                    <!--4.1.3.1.2 存放文字内容div-->
+                    <div>
+                        <!--黑体字标题-->
+                        <h3><a href="#">${item.information}</a></h3>
+                        <!--房子信息-->
+                        <div>
+                            <ul>
+                                <li>
+                                    <i></i>
+                                    ${item.htname} · ${item.area} 平米 · ${item.cxname} · ${item.lcname} · ${item.zxname}
+                                </li>
+                                <li>
+                                    <i></i>
+                                    ${item.sname}
+                                </li>
+                                <li>
+                                    <i></i>
+                                    ${item.personno} 人关注 · 近30天带看 ${item.dkno}次 · ${item.publishtime}发布
+                                </li>
+                            </ul>
+                            <ul>
+                                <li><strong>${item.price}</strong>万</li>
+                                <li>单价${(item.price / item.area).toFixed(2)}元/m²</li>
+                            </ul>
+                        </div>
+                        <!--房子标签-->
+                        <div>
+                            <span>${item.bqname}</span>
+                        </div>
+                    </div>
+                </div>
+
+        `
+            });
+
+            //放入div中
+            $("#houseList").html(str + `
+                        <!--4.1.1.4数据分页所在div-->
+
+                            <div class="d5c225">
+                        \t    \t\t\t\t<ul>
+                        \t    \t\t\t\t   <li>第<span id="pagenum">1</span>/<span id="totalpage">30</span>页</li>
+                        \t    \t\t\t\t   <li><a href="#" id="firstPage">首页</a></li>
+                        \t    \t\t\t\t   <li><a href="#" id="proPage">上一页</a></li>
+                        \t    \t\t\t\t   <li><a href="#" id="nextPage">下一页</a></li>
+                        \t    \t\t\t\t   <li><a href="#" id="lastPage">末页</a></li>
+                        \t    \t\t\t\t   <li>共<span id="totalcount">100</span>条</li>
+                        \t    \t\t\t   </ul>
+                        \t    \t\t\t</div>
+                        \t    \t\t</div>
+
+
+
+        `);
+
+        }  //显示分页信息end
+
+
+            //加载分页信息
+            var proPage ;
+            var nextPage;
+            var lastPage;
+
+
+            function showPageInfo(pageInfo){
+                //将共有多少套房源显示
+                $("#totalCount").html(`共找到&nbsp;&nbsp;<strong id="">${pageInfo.total}</strong>&nbsp;&nbsp;套房源`);
+                //当前页 显示  <span id =pagenum
+                $("#pagenum").html(`${pageInfo.pageNum}`);
+                //总页数的显示
+                $("#totalpage").html(`${pageInfo.pages}`);
+                //下面的总记录数显示
+                $("#totalcount").html(`${pageInfo.total}`);
+
+                //为几个全局的分页信息赋值
+                proPage = `${pageInfo.prePage}`;
+                nextPage = `${pageInfo.nextPage}`;
+                lastPage = `${pageInfo.pages}`;
+            }
+
+
+
+            //分页控件点击刷新
+            //首页
+            $(document).on("click","#firstPage",function(){
+                $.get("/getHouseByCondition?pagenum=1","pagenum="+proPage+"&names="+names+"&values="+values,function(data){
+                    showHouseInfo(data.houseInfo);
+                    showPageInfo(data.pageInfo);
+                });
+            })
+
+            //上一页
+            $(document).on("click","#proPage",function(){
+                $.get("/getHouseByCondition","pagenum="+proPage+"&names="+names+"&values="+values,function(data){
+                    showHouseInfo(data.houseInfo);
+                    showPageInfo(data.pageInfo);
+                })
+            })
+            //下一页
+            $(document).on("click","#nextPage",function(){
+                $.get("/getHouseByCondition","pagenum="+nextPage+"&names="+names+"&values="+values,function(data){
+                    showHouseInfo(data.houseInfo);
+                    showPageInfo(data.pageInfo);
+                })
+            })
+            //上一页
+            $(document).on("click","#lastPage",function(){
+                $.get("/getHouseByCondition","pagenum="+lastPage+"&names="+names+"&values="+values,function(data){
+                    showHouseInfo(data.houseInfo);
+                    showPageInfo(data.pageInfo);
+                })
+            })
+
+
+
+            //根据搜索框条件   多字段模糊查询
+/*            $(document).on("click","#searchImageBtn",function(){
+                var searchInfo = $("#searchInfo").val();
+                $.get("/getHouseInfoBySearch","searchInfo="+searchInfo,function(data){
+                    showHouseInfo(data.houseInfo);
+                    showPageInfo(data.pageInfo);
+                })
+            })*/
+
+            //创建全局的变量用来存放筛选条件
+            var names;  //存放键名字   例如 ： dname  tpsname   tasname
+            var values;  //存放具体的值  例如：江宁区  80-90cm   100-150万
+
+
+            //选择单选按钮   下面显示选择信息
+            //点击X删除一个筛选条件的时候页会刷新
+          function conditionSel() {
+                $("#contion").empty();
+
+                //定义函数全局范围的var
+                var str = "";
+
+                //获取所有的单选按钮
+                //遍历找到 区域选中的项  拿到value值  赋值给拼接的标签
+                $("[name='district']").each(function (i, item) {
+                    //判断 选中的单选按钮才进行填充
+                    if (item.checked) {
+                        str += `<p><span name="dname" value ="${item.value}">${item.value}</span>
+                    <label value="district" class="del">X</label></p>`;
+
+                    }
+                });
+
+                //遍历找到选中的价格项
+                $("[name='totalpricesection']").each(function (i, item) {
+                    //判断 选中的单选按钮才进行填充
+                    if (item.checked) {
+                        str += `<p><span name="tpsname" value ="${item.value}">${item.value}</span>
+                    <label value="totalpricesection" class="del">X</label></p>`;
+                    }
+                });
+
+
+                //遍历找到选中的面积项
+                $("[name='totalareasection']").each(function (i, item) {
+                    //判断 选中的单选按钮才进行填充
+                    if (item.checked) {
+                        str += `<p><span name="tasname" value ="${item.value}">${item.value}</span>
+                    <label value="totalareasection" class="del">X</label></p>`;
+                    }
+                });
+
+
+                //整理标签的格式
+                $("#condition").html(str);
+
+
+                names = new Array();
+                values = new Array();
+
+                //获取condition种span元素的值
+                var spans =  $("#condition span");  //span标签的数组
+              $(spans).each(function(i,item){
+                  //填充names  values数组
+                  names[i] = $(this).attr("name");
+                  values[i] = $(this).attr("value");
+              });
+
+              //测试
+              console.info(names);
+              console.info(values);
+
+              //调用控制层的ajax实现刷新
+              $.get("/getHouseByCondition","names="+names+"&values="+values,function(data){
+                    //获取页面种房源信息
+                  alert("aa");
+                  console.info(data);
+                  showHouseInfo(data.houseInfo);
+                  showPageInfo(data.pageInfo);
+              })
+
+            }
+
+
+            //页面加载添加筛选条件
+            $(document).ready(function () {
+                //ajax获得  区域信息   面积  总价格
+                //获得区域
+                $.get("/getDistrict", function (data) {
+                    alert("区域..." + data);
+                    var str = `<dt>全部</dt>`;
+                    //遍历区域集合  ecmascript6
+                    //$之前  EL表达式 JSP  再内置对象中设置属性之后才能用
+                    //request.setAtrribute("name","zhangsan");  ${name}
+                    //<input type="radio" name="district" value=""/>
+                    $(data).each(function (i, item) {
+                        str += `<dd><input type="radio" name="district" onclick="conditionSel();" value="${item.dname}"/>
+				${item.dname}</dd>`;
+                    });
+                    //将获得的区域信息追加到dl中
+                    $("#district").html(str);
+                })
+
+                //获得总价
+                $.get("/Totalpricesection", function (data) {
+                    alert("总价..." + data);
+                    var str = `<dt>总价</dt>`;
+                    //遍历区域集合  ecmascript6
+                    $(data).each(function (i, item) {
+                        str += `<dd><input type="radio" name="totalpricesection" onclick="conditionSel();" value="${item.tpsname}"/>
+				${item.tpsname}</dd>`;
+                    });
+                    //将获得的区域信息追加到dl中
+                    $("#totalpricesection").html(str);
+                })
+
+
+                //获得总面积
+                $.get("/Totalareasection", function (data) {
+                    alert("面积..." + data);
+                    var str = `<dt>面积</dt>`;
+                    //遍历区域集合  ecmascript6
+                    $(data).each(function (i, item) {
+                        str += `<dd><input type="radio" name="totalareasection" onclick="conditionSel();" value="${item.tasname}"/>
+				${item.tasname}</dd>`;
+                    });
+                    //将获得的区域信息追加到dl中
+                    $("#totalareasection").html(str);
+                })
+
+
+                //获取所有房源信息  返回hashMap  houseInfo  pageInfo
+                $.get("/getHouseInfo", function (data) {
+                    alert("data:--------" + data);
+                    alert("data houseInfo:--------" + data.houseInfo);
+                    alert("data pageInfo:--------" + data.pageInfo);
+
+                    //显示房屋相关信息
+                    showHouseInfo(data.houseInfo);
+
+                    //分页信息载入
+                    showPageInfo(data.pageInfo);
+                });
+
+            });
+
+
+
+
+        //文档加载完成之后再绑定
+        $(document).on("click", ".del", function () {
+            //获取X  也就是label标签中的value的值
+            var eleName = $(this).attr("value");
+
+            //遍历所有单选按钮（点击x的那一块区域）
+            $("[name='" + eleName + "']").each(function (i, item) {
+
+                //移出选中按钮的属性checked   <input type="radio" name="district" checked ="checked"/>
+                $(this).removeAttr("checked");
+
+            });
+
+            //重新加载选中筛选条件的事件处理函数
+            conditionSel();
+        });
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+*{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #F1F1F1;
+}
+/*1.主题内容*/
+section{
+	height: 691px;
+	width: 100%;
+	background-color: #F1F1F1;
+	
+}
+/*1.1主题内容里的白色div*/
+section #d2{
+	height: 615px;
+	width: 780px;
+	background-color: #FFFFFF;
+	position: relative;
+	top: 76px;
+}
+/*1.1.1白色div里的上半部分的创建账号div(bc)*/
+section #d2 .d2c2{
+	height: 140px;
+	width: 100%;
+}
+section #d2 .d2c2 ul{
+	float: left;
+	width: 100%;
+	height: 30px;
+	margin-top: 80px;
+}
+section #d2 .d2c2 ul li{
+	float: left;
+	margin-left: 16px;
+	margin-bottom:20px ;
+}
+section #d2 .d2c2 ul li:first-child{
+	width: 5px;
+	height: 24px;
+	background-color: #fbb100;
+	float: left;
+	margin-top: 8px;
+	margin-left: 63px;
+}
+section #d2 .d2c2 ul li:last-child{
+	font-size: 24px;
+	color: #323942;
+	float: left;
+}
+
+
+
+/*1.1.2白色div里的下半部分div(bc)*/
+section #d2 .d2c3{
+	width: 100%;
+	height: 475px;
+}
+/*1.1.2.1白色div里的下半部分左侧div(bc)*/
+section #d2 .d2c3 .d2c32{
+	height:475px ;
+	width: 485px;
+	float: left;
+}
+/*1.1.2.1.1个列表所在divaaaaaaaaaaaaaaa*/
+section #d2 .d2c3 .d2c32 .d2c322{
+	height: 445px;
+	width: 421px;
+	float: right;
+	border-right: 1px dashed #F1F1F1;
+}
+/*设置div下的所有的li标签*/
+section #d2 .d2c3 .d2c32 .d2c322 ul li{
+	border-radius: 5px;
+	float: left;
+	height: 50px;
+	width: 360px;
+	margin-bottom: 16px;
+	background-color: #FAFAFA;
+}
+/*设置所有按钮的样式*/
+section #d2 .d2c3 .d2c32 .d2c322 ul li input{
+	height: 40px;
+	width: 215px;
+	margin-left: 16px;
+	margin-top: 5px;
+	background-color: #FAFAFA;
+	border: none;
+	outline: none;
+}
+/*设置黄色的注册按钮所在的li标签*/
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(6){
+	margin-top: 10px;
+	
+}
+/*设置黄色的注册按钮*/
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(6) input{
+	margin-left: 0px;
+	background-color: #fbb100;
+	color: #fff;
+	font-size: 18px;
+	width: 360px;
+	height: 50px;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*设置最后一个我已阅读的li标签*/
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(7){
+	background-color: #FFFFFF;
+}
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(7) input{
+	width: 20px;
+	height: 13px;
+}
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(7) span{
+	color:#a1a2a4 ;
+	font-size: 15px;
+}
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(7) a{
+	text-decoration: none;
+}
+section #d2 .d2c3 .d2c32 .d2c322 ul li:nth-child(7) a span{
+	color: #fbb100;
+}
+
+
+/*1.1.2.2白色div里的下半部分右侧div(bc)*/
+section #d2 .d2c3 .d2c33{
+	height:475px ;
+	width: 295px;
+	float: left;
+}
+/*设置所有的li标签*/
+section #d2 .d2c3 .d2c33 ul li{
+	color: #535d6a;;
+	font-size: 15px;
+	margin-bottom: 10px;
+	margin-left: 70px;
+}
+/*设置第二行的内容*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(2) a{
+	color: #fbb100;
+	font-size: 18px;
+}
+/*设置第二行的图片*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(2) a img{
+	vertical-align: middle;
+}
+/*设置第三行的内容*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(3){
+	margin-top:56px ;
+}
+/*设置第四行的内容*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(4){
+	margin-left: 64px;
+	margin-top: 24px;
+}
+
+/*设置第app二维码位置*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(5){
+	margin-top: 68px;
+	margin-left: 92px;
+}
+/*设置最后一行的文字*/
+section #d2 .d2c3 .d2c33 ul li:nth-child(6){
+	font-size: 12px;
+	color: #a1a2a4;
+	margin-left: 87px;
+	margin-top: -6px;
+}

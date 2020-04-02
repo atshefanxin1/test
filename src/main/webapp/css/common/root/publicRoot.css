@@ -1,0 +1,178 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+ul li{
+	list-style-type: none;
+}
+
+/*1.黑色背景两端顶头div*/
+footer#d2{
+	width: 100%;
+	height: 314px;
+	background-color: #1b242b;
+}
+/*1.1主体内容居中div（bc）*/
+#d2 .d2c2{
+	width: 1180px;
+	height: 314px;
+}
+/*1.1.1log图片所在行div*/
+#d2 .d2c2 .d2c22{
+	width: 1180px;
+	height: 70px;
+	border-bottom: solid 1px #495055;
+}
+/*设置图片log所在的p标签*/
+#d2 .d2c2 .d2c22 p{
+	float: left;
+	height: 70px;
+	width: 120px;
+	line-height: 70px;
+}
+/*设置图片log垂直居中*/
+#d2 .d2c2 .d2c22 p img{
+	vertical-align: middle;
+}
+/*设置小标题列表项（bc)*/
+#d2 .d2c2 .d2c22 ul{
+	width: 1060px;
+	height: 70px;
+	float: left;
+}
+/*设置所有的li标签(bc)*/
+#d2 .d2c2 .d2c22 ul li{
+	float: right;
+	width: 64px;
+	height: 70px;
+	line-height: 70px;
+	margin-left: 40px;
+}
+/*设置所有li标签下的超链接a标签鼠标放上去的样式*/
+#d2 .d2c2 .d2c22 ul li a:hover{
+	color: #FBC700
+}
+
+/*设置第一行文本样式*/
+#d2 .d2c2 .d2c22 ul li a{
+	text-decoration: none;
+	color: #999;
+	font-size: 16px;
+}
+
+
+
+/*1.1.2客服电话所在大的div*/
+#d2 .d2c2 .d2c23{
+	height: 183px;
+	width: 1180px;
+	border-bottom: solid 1px #495055;
+}
+/*1.1.2.1左侧所在div（bcaaaaa）*/
+#d2 .d2c2 .d2c23 .d2c232{
+	float: left;
+	width: 800px;
+	height:183px;
+}
+#d2 .d2c2 .d2c23 .d2c232 ul:first-child{
+	float: left;
+	margin-top: 37px;
+}
+/*设置电话log*/
+#d2 .d2c2 .d2c23 .d2c232 ul:first-child li:first-child i{
+	display: inline-block;
+	float: left;
+	width: 46px;
+	height: 46px;
+	background-image: url(../../../image/shouye/root/com-icon.png);
+}
+/*设置客户电话所在列表下的li都左浮*/
+#d2 .d2c2 .d2c23 ul:first-child li{
+	float: left;
+}
+/*第二个li(bc)*/
+#d2 .d2c2 .d2c23 .d2c232 ul:first-child li:nth-child(2){
+	font-size: 14px;
+	color: #999;
+	height: 46px;
+	width: 85px;
+	text-align: center;
+	line-height: 46px;
+}
+/*第三个li(bc)*/
+#d2 .d2c2 .d2c23  .d2c232 ul:first-child li:last-child{
+	color: #fbc700;
+	font-size: 24px;
+	height: 46px;
+	width: 162px;
+	text-align: center;
+	line-height: 46px;
+}
+/*地理位置所在ul(bcaaaaaaa)*/
+#d2 .d2c2 .d2c23 .d2c232 ul:last-child{
+	color: #999999;
+	font-size:  14px;
+	float: left;
+	height: 82px;
+	width: 800px;
+	margin-top: 10px;
+}
+/*地理位置所在ul下的li标签的行距(bcaaaaaaa)*/
+#d2 .d2c2 .d2c23 .d2c232 ul:last-child li{
+	line-height: 26px;
+}
+
+/*1.1.2.2右侧侧所在div(bc)*/
+#d2 .d2c2 .d2c23 .d2c233{
+	float: right;
+	width: 250px;
+	height: 183px;
+}
+/*右侧侧所在div第一个ul(bc)*/
+#d2 .d2c2 .d2c23 .d2c233 ul:first-child{
+	float: left;
+	width: 90px;
+	height: 183px;
+}
+/*右侧侧所在div第一个ul下的最后一个li列表*/
+#d2 .d2c2 .d2c23 .d2c233 ul:first-child li:last-child{
+	clear: both;
+	width: 89px;
+	height: 26px;
+	border-radius: 20px ;
+	border: 1px solid #283036;
+	text-align: center;
+	color: #999;
+	margin-top: 5px;
+}
+/*右侧侧所在div第一个ul下的第一个li列表下的img标签*/
+#d2 .d2c2 .d2c23 .d2c233 ul:first-child li:first-child img {
+	margin-top: 41px;
+}
+/*右侧侧所在div第二个ul(bc)*/
+#d2 .d2c2 .d2c23 .d2c233 ul:last-child{
+	float: right;
+	width: 90px;
+	height: 183px;
+}
+/*右侧侧所在div第二个ul下的最后一个li标签(bc)*/
+#d2 .d2c2 .d2c23 .d2c233 ul:last-child li:last-child{
+	clear: both;
+	width: 89px;
+	height: 26px;
+	border-radius: 20px ;
+	border: 1px solid #283036;
+	text-align: center;
+	color: #999;
+	margin-top: 5px;
+}
+/*右侧侧所在div第二个ul下的第一个一个li标签下的img标签(bc)*/
+#d2 .d2c2 .d2c23 .d2c233 ul:last-child li:first-child img {
+	margin-top: 41px;
+}
+/*1.1.3版权文字所在div*/
+#d2 .d2c2 .d2c24 p{
+	color: #797979;
+	font-size: 12px;
+	line-height: 59px;
+}

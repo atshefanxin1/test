@@ -1,0 +1,891 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+ul li{list-style-type: none;}
+/*解决引入公共尾部出现的间隙*/
+iframe{
+	vertical-align: bottom;
+	/*display: block;*/
+}
+/*1.背景图所在div*/
+#d2{
+	height:630px;
+	width: 100%;
+	background:url(../image/shouye/beijing/index-top-banner.jpg) no-repeat center;
+	
+}
+/*1.1 主题内容居中内容层(bc,opacity)*/
+#d2 .d2c2{
+	height: 630px;
+	width: 1180px;
+}
+/*1.1.1 导航*/
+#d2 .d2c2 .d2c22{
+	height: 60px;
+	padding-top: 10px;
+}
+/*1.1.2 搜索框和图片所在div(bc，opacity)*/
+#d2 .d2c2 .d2c23{
+	height: 382px;
+	width: 1180px;
+}
+
+/*1.1.2.1 空的div只为空出距离*/
+#d2 .d2c2 .d2c23 .d2c232{
+	width: 1180px;
+	height: 143px;
+}
+
+/*1.1.2.2 搜索框和图片所在内容div(bc)*/
+#d2 .d2c2 .d2c23 .d2c233{
+	width: 780px;
+	height: 239px;
+}
+/*陪你发现心中家图片*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(1){
+	height: 83px;
+	width: 482px;
+}
+/*二房导航*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(2),
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(2) ul{
+	height: 96px;
+	width: 780px;
+}
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(2) ul li{
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-right: 40px;
+	padding-top: 30px;
+}
+
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(2) ul li:first-child{
+	color: #FBB100;
+	
+}
+
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(2) ul li:first-child span{
+	border-bottom: 3px solid #FBB100 ;
+}
+/*搜索框所在div*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(3){
+	height: 60px;
+	background-color: #FFFFFF;
+	width: 780px;
+}
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(3) p:first-child{
+	float: left;
+	height: 60px;
+	line-height: 60px;
+}
+
+/*设置文本框的样式*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(3) p:first-child input{
+	 outline: none;
+	 border: none;
+	 padding-left: 30px;
+}
+/*开始找房背景*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(3) p:last-child{
+	float: right;
+	width: 150px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	background-color: #FBB100;
+}
+/*设置开始找房超链接字体*/
+#d2 .d2c2 .d2c23 .d2c233 div:nth-of-type(3) p:last-child a{
+	color: #07315a;
+	text-decoration: none;
+}
+
+/*2.横向三张图片所在div(bc)*/
+#d3{
+	height:308px;
+	width: 100%;
+}
+
+/*2.1横向三张图片所在主题内容居中div(bc)*/
+#d3 div{
+	width: 1180px;
+	height: 308px;
+}
+/*横向三张图片样式*/
+#d3 div img{
+	padding-top: 50px;
+}
+/*设置中间一个图片的左右边距*/
+#d3 div img:nth-of-type(2){
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/*3.第三部分*/
+#d4{
+	height: 283px;
+	width: 100%;
+	background-color: #F8F8F8;
+	margin-bottom: 70px;
+}
+/*3.1主题内容居中div(bc)*/
+#d4 div{
+	height: 283px;
+	width: 1180px;
+}
+/*单个图片整体(bc)*/
+#d4 div a{
+	display: block;
+	float: left;
+	height: 194px;
+	width: 226px;
+	margin-right: 92px;
+	text-align: center;
+	font-size: 12px;
+	color:#8e99a9;
+	text-decoration: none;
+	margin-top: 45px;
+}
+/*去除最后一个右边距离*/
+#d4 div a:last-child{
+	margin-right: 0px;
+}
+#d4 div a ul li:nth-of-type(1){
+	height: 90px;
+}
+#d4 div a ul li:nth-of-type(2){
+	height: 40px;
+	line-height: 40px;
+	margin-top: 30px;
+	font-size: 24px;
+	font-family: simhei;
+	color: #323942;
+}
+#d4 div a ul li:nth-of-type(3){
+	height: 30px;
+	line-height: 30px;
+}
+
+/*4.第四部分下载APP*/
+#d5{
+	height: 420px;
+	width: 100%;
+	background: url(../image/shouye/app/app.jpg) no-repeat center;
+}
+#d5 div{
+	width: 1180px;
+	height:420px ;
+}
+#d5>div>p>img{
+	margin-top: 82px;
+}
+
+#d5>div>div>ul,
+#d5>div>div>p
+{
+	float: left;
+}
+/*下载列表*/
+#d5>div>div{
+	margin-top: 25px;
+}
+/*下载列表的下边距*/
+#d5>div>div>ul>li{
+	margin-bottom: 10px;
+}
+#d5>div>div>p{
+	margin-left: 15px;
+}
+
+#d5>div>p,
+#d5>div>div{
+	margin-left: 70px;
+}
+
+/*5.第五部分：有好房(bc)*/
+#d6{
+	height: 262px;
+	width: 1180px;
+}
+/*5.1主题内容的div*/
+#d6 .d6c2{
+	float: left;
+	height: 45px;
+	width: 100%;
+	margin-top: 112px;
+}
+/*有好房所在行*/
+#d6 .d6c2 {
+	width: 100%;
+}
+/*有好房前面的黄色小方块*/
+#d6 .d6c2 i{
+	display: inline-block;
+	float: left;
+	width: 6px;
+	height: 32px;
+	background-color: #fbb100;
+	margin-top: 7px;
+	margin-left: 526px;
+}
+/*有好房的样式设置*/
+#d6 .d6c2 h2{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	font-size: 34px;
+	font-weight: normal;
+	margin-left: 20px;
+}
+/*好房那么多所在行的内容*/
+#d6 p{
+	float: left;
+	font-size: 16px;
+	color: #8e99a9;
+	width:1086px ;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+/*好房那么多所在行的内容后面的“更多”选项的超链接样式*/
+#d6 a {
+	text-decoration: none;
+	float: left;
+	display: inline-block;
+	width: 44px;
+	height: 19px;
+	font-size: 14px;
+	color: #8e99a9;
+	margin-top: 16px;
+	
+}
+#d6 a:hover{
+	color: #FCCD35;
+}
+/*“更多”超链接选项后面的小箭头*/
+#d6 a span{
+	display:inline-block;
+	float: right;
+	width: 6px;
+	height: 19px;
+	margin-top: 3px;
+	background: url(../image/shouye/ind-icon.png) no-repeat -36px -382px;
+}
+/*6.第六部分：横向四张图片所在div(bc)*/
+#d7{
+	width: 1180px;
+	height: 268px;
+	margin-bottom: 104px;
+}
+/*设置四张图片及其内容的整体样式(bc)*/
+#d7 ul{
+	float: left;
+	width: 280px;
+	height:268px;
+	margin-right: 20px;
+	background-color: #FAFAFA;
+}
+/*防止最后一张图片溢出，设置其margin-rigth为0px*/
+#d7 ul:last-child{
+	margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+/*
+ * ======================================================================================
+ *                                   实现有好房图片的动态
+ * =========================================================================================
+ */
+#d7 ul:nth-of-type(1) li:nth-of-type(1){
+	width: 280px;
+	height: 158px;
+	overflow: hidden;
+}
+
+#d7 ul:nth-of-type(1) li:nth-of-type(1) img{
+	transition: all 1.5s;
+	
+}
+#d7 ul:nth-of-type(1) li:nth-of-type(1) img:hover{
+	transform: scale(1.1); 
+}
+
+#d7 ul:nth-of-type(2) li:nth-of-type(1){
+	width: 280px;
+	height: 158px;
+	overflow: hidden;
+}
+
+#d7 ul:nth-of-type(2) li:nth-of-type(1) img{
+	transition: all 1.5s;
+	
+}
+#d7 ul:nth-of-type(2) li:nth-of-type(1) img:hover{
+	transform: scale(1.1); 
+}
+#d7 ul:nth-of-type(3) li:nth-of-type(1){
+	width: 280px;
+	height: 158px;
+	overflow: hidden;
+}
+
+#d7 ul:nth-of-type(3) li:nth-of-type(1) img{
+	transition: all 1.5s;
+	
+}
+#d7 ul:nth-of-type(3) li:nth-of-type(1) img:hover{
+	transform: scale(1.1); 
+}
+#d7 ul:nth-of-type(4) li:nth-of-type(1){
+	width: 280px;
+	height: 158px;
+	overflow: hidden;
+}
+
+#d7 ul:nth-of-type(4) li:nth-of-type(1) img{
+	transition: all 1.5s;
+	
+}
+#d7 ul:nth-of-type(4) li:nth-of-type(1) img:hover{
+	transform: scale(1.1); 
+}
+/*
+ * ======================================================================================
+ *                                   实现有好房图片的动态
+ * =========================================================================================
+ */
+
+
+/*
+ * ======================================================================================
+ *                                   实现新房频道图片的动态
+ * =========================================================================================
+ */
+
+/*设置所有图片下的小黄点*/
+#d7 ul li i{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin-bottom: 4px;
+	margin-right: 2px;
+	background-color: #feb230;
+}
+/*设置下面两行文字的样式*/
+#d7 ul li:nth-of-type(2),
+#d7 ul li:nth-of-type(3){
+	margin-left: 22px;
+	margin-top: 28px;
+}
+/*设置所有图片主标题样式为黑体*/
+#d7 ul li:nth-of-type(2){
+	font-size: 24px;
+	font-family: simhei;
+	
+}
+#d7 ul li:nth-of-type(3){
+	font-size: 18px;
+	margin-top: 13px;
+}
+/*设置所有li下a超链接的样式*/
+#d7 ul li a{
+	color: #323942;
+	text-decoration: none;
+}
+/*设置所有li下a超链接鼠标放上去的样式*/
+#d7 ul li a:hover{
+	color: #FCCD35;
+}
+	
+/*7.第七部分：房产知识，锦郎妙计所在大div*/
+#d8{
+	width: 100%;
+	height: 378px;
+	background-color: #F8F8F8;
+}
+/*7.1主题内容居中div(bc)*/
+#d8 .d8c2{
+	width: 1180px;
+	height: 378px;
+}
+/*7.1.1房产知识，锦囊妙计所在行的内容(bc)*/
+#d8 .d8c2>ul{
+	float: left;
+	width: 1180px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 24px;
+	font-family: simhei;
+	margin-top: 28px;
+}
+/*设置房产知识，锦囊妙计的样式(bc)*/
+#d8 .d8c2>ul li{
+	display: block;
+	float: left;
+	width: 112px;
+	height: 55px;
+	text-align: center;
+}
+/*设置房产知识的样式*/
+#d8 .d8c2>ul li:nth-of-type(1){
+	margin-left: 425px;
+	color: #fdc915;
+	border-bottom: 3px solid;
+	cursor: pointer;
+}
+/*设置锦囊妙计的样式*/
+#d8 .d8c2>ul li:nth-of-type(2){
+	margin-left: 108px;
+	cursor: pointer;
+}
+/*设置“更多”的样式*/
+#d8 .d8c2>a{
+	text-decoration: none;
+	float: right;
+	display: block;
+	width: 43px;
+	height: 20px;
+	font-size: 14px;
+	color: #8e99a9;
+	
+}
+/*设置“更多”的样式鼠标放上去的颜色*/
+#d8 .d8c2>a:hover{
+	color: #FCCD35;
+}
+/*设置更多后面的小箭头*/
+#d8 .d8c2>a i{
+	display: inline-block;
+	width: 6px;
+	height: 20px;
+	float: right;
+	margin-top: 1px;
+	background: url(../image/shouye/ind-icon.png) no-repeat -36px -380px;
+}
+/*7.1.2横向两张图所在div*/
+#d8 .d8c2 .d8c22{
+	width: 1180px;
+	height: 170px;
+	float: left;
+	margin-top: 20px;
+}
+/*设置两个图片*/
+#d8 .d8c2 .d8c22 div:nth-of-type(1),
+#d8 .d8c2 .d8c22 div:nth-of-type(3){
+	float: left;
+	width: 227px;
+	height: 170px;
+}
+/*设置两张图片右侧文字的样式*/
+#d8 .d8c2 .d8c22 div:nth-of-type(2),
+#d8 .d8c2 .d8c22 div:nth-of-type(4){
+	float: left;
+	width: 312px;
+	height: 170px;
+	margin-left: 22px;
+}
+/*设置第一行文字超链接的样式*/
+#d8 .d8c2 .d8c22 h3 a{
+	font-weight: normal;
+	color: #323942;
+	text-decoration: none;
+	font-size: 20px;
+}
+#d8 .d8c2 .d8c22 h3 a:hover{
+	color: #FCCD35;
+}
+#d8 .d8c2 .d8c22 h3{
+	margin-top: 4px;
+	
+}
+/*设置第二行文字的样式*/
+#d8 .d8c2 .d8c22 p{
+	color:#535d6a;
+	margin-top: 42px;
+	font-size: 16px;
+	line-height: 33px;
+}
+/*调整第二张图和前面内容的距离*/
+#d8 .d8c2 .d8c22 div:nth-of-type(3){
+	margin-left: 55px;
+}
+
+/*8.第8部分：有好房(bc)*/
+#d9{
+	height: 262px;
+	width: 1180px;
+}
+/*8.1主题内容的div*/
+#d9 .d6c2{
+	float: left;
+	height: 45px;
+	width: 100%;
+	margin-top: 108px;
+}
+/*新房频道所在行*/
+#d9 .d6c2 {
+	width: 100%;
+}
+/*新房频道前面的黄色小方块*/
+#d9 .d6c2 i{
+	display: inline-block;
+	float: left;
+	width: 6px;
+	height: 32px;
+	background-color: #fbb100;
+	margin-top: 7px;
+	margin-left: 512px;
+}
+/*新房频道的样式设置*/
+#d9 .d6c2 h2{
+	float: left;
+	text-align: center;
+	line-height: 45px;
+	font-size: 34px;
+	font-weight: normal;
+	margin-left: 20px;
+}
+/*以我之爱，筑您之家所在行的内容*/
+#d9 p{
+	float: left;
+	font-size: 16px;
+	color: #8e99a9;
+	width:1086px ;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 15px;
+}
+/*以我之爱，筑您之家所在行的内容后面的“更多”选项的超链接样式*/
+#d9 a {
+	text-decoration: none;
+	float: left;
+	display: inline-block;
+	width: 44px;
+	height: 19px;
+	font-size: 14px;
+	color: #8e99a9;
+	margin-top: 16px;
+	
+}
+#d9 a:hover{
+	color: #FCCD35;
+}
+/*“更多”超链接选项后面的小箭头*/
+#d9 a span{
+	display:inline-block;
+	float: right;
+	width: 6px;
+	height: 19px;
+	margin-top: 3px;
+	background: url(../image/shouye/ind-icon.png) no-repeat -36px -382px;
+}
+/*第九部分：:主题内容居中div（bc)*/
+#d10{
+	width: 1180px;
+	height: 334px;
+	margin-bottom: 90px;
+}
+/*三张图片所在大div*/
+#d10 .d10c2{
+	width: 1180px;
+	height: 282px;
+}
+/*三张图片的整体样式a*/
+#d10 .d10c2>a{
+	display: block;
+	float: left;
+	width: 376px;
+	height: 282px;
+	margin-right:26px ;
+}
+/*(设置三张图片所在div的大小a)*/
+#d10 .d10c2 a div{
+	width: 376px;
+	height: 282px;
+}
+/*(右侧图片的margin-right设为0px a)*/
+#d10 .d10c2>a:last-of-type{
+	margin-right: 0px;
+}
+
+/*三张图片中的文字整体样式a*/
+#d10 .d10c2 a div h3,
+#d10 .d10c2 div p{
+	width: 376px;
+	height: 141px;
+	float: left;
+}
+/*第一张图片所在diva*/
+#d10 .d10c2 a:nth-of-type(1) div{
+	background:url(../image/shouye/nine/suning.jpg) no-repeat;
+}
+/*
+ * =============================================================
+ */
+/*#d10 .d10c2 a:nth-of-type(1) div{
+	width: 376px;
+	height: 282px;
+	overflow: hidden;
+}
+
+#d10 .d10c2 a:nth-of-type(1) div{
+	transition: all 1.5s;
+	
+}
+#d10 .d10c2 a:nth-of-type(1) div:hover{
+	background-image:transform: scale(1.1);
+}*/
+/*
+ * =============================================================
+ */
+
+/*第二张图片所在diva*/
+#d10 .d10c2 a:nth-of-type(2) div{
+	background:url(../image/shouye/nine/zhongnan.jpg) no-repeat;
+}
+/*第三张图片所在div a*/
+#d10 .d10c2 a:nth-of-type(3) div{
+	margin-right: 0px;
+	background:url(../image/shouye/nine/zijin.jpg) no-repeat;
+}
+/*三张图片中每张图片的第一行文字a*/
+#d10 .d10c2 a div h3{
+	text-align: center;
+	line-height: 231px;
+	font-size: 28px;
+	color: #fff;
+	font-weight: normal;
+}
+/*三张图片中每张图片的第二行文字a*/
+#d10 .d10c2 a div p{
+	text-align: center;
+	font-size: 20px;
+	color: #feefcc;
+	line-height: 34px;
+}
+
+/*三张图片下面的文字整体样式*/
+#d10>p{
+	float: left;
+	width: 376px;
+	height: 52px;
+	margin-right: 26px;
+	line-height: 52px;
+	text-align: center;
+}
+/*去除三张图片下面的文字的下划线以及设置字体样式*/
+#d10>p>a{
+	text-decoration: none;
+	font-size: 16px;
+	color: #2a2c2e;
+}
+/*设置超链接鼠标放上去的样式*/
+#d10>p>a:hover{
+	color: #FCCD35;
+}
+/*第三张图片下面的文字margin-right设为0px，防止溢出*/
+#d10>p:nth-of-type(3){
+	margin-right: 0px;
+}
+/*第十部分:背景*/
+#d11{
+	width: 100%;
+	height: 213px;
+	background-color: #F8F8F8;
+}
+/*设置最上面一栏的导航*/
+#d11 ul:nth-of-type(1){
+	width: 1180px;
+	height: 41px;
+	padding-top: 18px;
+	border-bottom: 1px solid #E6E6E6;
+}
+/*设置最上面一栏的导航的内容*/
+#d11 ul:nth-of-type(1) li{
+	cursor: pointer;
+	float: left;
+	margin-right: 50px;
+	line-height: 40px;
+	font-weight: bold;
+	font-size: 14px;
+    position: relative;
+}
+/*设置第一行内容下面的黄色线*/
+#d11 ul:nth-of-type(1) li:first-of-type span{
+	width: 30px;
+    height: 2px;
+    background: #fcb100;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    margin-left: -15px
+}
+
+/*设置友情链接的字体颜色*/
+#d11 ul:nth-of-type(1) li:first-of-type{
+	color: #fcb100;
+}
+/*设置下面内容的总体样式(bc)*/
+#d11 ul:nth-of-type(2){
+	width: 1180px;
+	height: 85px;
+	margin-top: 35px;
+}
+/*设置下面内容所在行的右边距*/
+#d11 ul:nth-of-type(2) li{
+	float: left;
+	margin-bottom: 21px;
+	margin-right: 15px;
+}
+/*设置所有的超链接字体与颜色*/
+#d11 ul:nth-of-type(2) li a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #323942;
+}
+/*设置所有内容超链接鼠标放上去后字体样式*/
+#d11 ul:nth-of-type(2) li a:hover{
+	color: #FCB100;
+}
+
+
+
+/*咨询经纪人*/
+article{
+	width: 240px;
+	height: 85px;
+	background:url(../image/shouye/root/m.png) no-repeat;
+	position: fixed;
+	bottom: 6px;
+	right: 44px;
+}
+article span{
+	display: inline-block;
+	margin-top: 45px;
+	margin-left: 65px;
+	height: 40px;
+	width: 130px;
+	line-height: 40px;
+	float: left;
+}
+article i{
+	display: inline-block;
+	float: left;
+	width: 45px;
+	height: 40px;
+	margin-top: 46px;
+	background:url(../image/youqinglianjie/m_right.png) no-repeat;
+}
+
+/*==========================================================
+ * 				右侧栏
+ * =========================================================
+ */
+aside ul {
+	width: 36px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: #fff;
+	border-left: 1px solid #dcdcdc;
+	z-index: 100;
+	box-shadow: 2px 2px 5px 3px rgba(170,170,170,0.4);
+}
+aside ul li{
+	list-style-type: none;
+	height: 45px;
+	width: 36px;
+	margin-bottom: 10px;
+	position: relative;
+	top:106px;
+}
+aside ul li:first-child{
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -4px;
+}
+aside ul li:first-child:hover {
+	cursor: pointer;
+    background-position: -36px -4px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(2){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -116px;
+}
+aside ul li:nth-child(2):hover{
+	cursor: pointer;
+	background-position: -36px -116px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(3){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -490px;
+}
+aside ul li:nth-child(3):hover {
+	cursor: pointer;
+	background-position: -36px -490px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(4){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -170px;
+}
+aside ul li:nth-child(4):hover {
+	cursor: pointer;
+	background-position: -36px -170px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(5){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -282px;
+}
+aside ul li:nth-child(5):hover {
+	cursor: pointer;
+	background-position: -36px -282px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(6){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -393px;
+}
+aside ul li:nth-child(6):hover {
+	cursor: pointer;
+	background-position: -36px -393px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(7){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -338px;
+}
+aside ul li:nth-child(7):hover {
+	cursor: pointer;
+	background-position: -36px -338px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(8){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -447px;
+	margin-top: 125px;
+}
+aside ul li:nth-child(8):hover {
+	cursor: pointer;
+	background-position: -36px -447px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+/*
+ * =======================================================
+ * 				右侧栏
+ * =======================================================*/
+

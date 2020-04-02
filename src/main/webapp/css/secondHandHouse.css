@@ -1,0 +1,664 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+
+/*★将内联框架变成块级元素消除和下一个块级元素的白色间隙*/
+
+#d2 iframe {
+	display: block;
+}
+
+
+/*2.搜索框所在灰色背景两端顶头div*/
+
+#d3 {
+	width: 100%;
+	height: 46px;
+	background-color: #F2F2F2;
+	border-bottom: 1px solid #E8E8E8;
+}
+
+
+/*2.1 主体内容居中div*/
+
+#d3 .d3c2 {
+	width: 1400px;
+	height: 47px;
+	font-size: 12px;
+}
+
+#d3 .d3c2 p:first-child {
+	float: left;
+	height: 47px;
+	line-height: 47px;
+	color: #8e99a9;
+}
+
+#d3 .d3c2 p:first-child a {
+	color: #8e99a9;
+}
+
+
+/*第一个字体鼠标移过变色*/
+
+#d3 .d3c2 p:first-child span:first-child a:hover {
+	color: #FBB100;
+}
+
+
+/*搜索框所在p*/
+
+#d3 .d3c2 p:last-child {
+	float: right;
+	height: 30px;
+	width: 434px;
+	line-height: 30px;
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	margin-top: 8px;
+	border-bottom: 1px solid #ECECEC;
+}
+
+#d3 .d3c2 p:last-child input:first-child {
+	margin-left: 13px;
+	border: none;
+	outline: none;
+	width: 387px;
+	color: #8e99a9;
+	font-size: 12px;
+}
+
+#d3 .d3c2 p:last-child input:last-child {
+	position: relative;
+	top: 5px;
+}
+
+
+/*3.条件筛选(bc)*/
+
+#d4 {
+	width: 100%;
+	margin-top: 23px;
+}
+
+
+/*3.1主体内容居中div*/
+
+#d4 .d4c2 {
+	width: 1400px;
+	font-size: 14px;
+	color: #323942;
+}
+
+
+/*3.1.1 选项卡*/
+
+#d4 .d4c2 .d4c22 {
+	height: 28px;
+	border-bottom: 2px solid #FBB100;
+}
+
+#d4 .d4c2 .d4c22 p {
+	height: 28px;
+	width: 180px;
+	line-height: 28px;
+	font-size: 14px;
+	float: left;
+	text-align: center;
+}
+
+
+/*第一个选项卡*/
+
+#d4 .d4c2 .d4c22 p:first-child {
+	background-color: #FBB100;
+}
+
+#d4 .d4c2 .d4c22 p:first-child a {
+	color: #FFFFFF;
+}
+
+
+/*第二个选项卡*/
+
+#d4 .d4c2 .d4c22 p:last-child {
+	background-color: #FFF1D0;
+}
+
+#d4 .d4c2 .d4c22 p:last-child a {
+	color: #323942;
+}
+
+
+/*3.1.2 条件筛选*/
+
+#d4 .d4c2 .d4c23 {
+	background-color: #F6F6F6;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+
+/*3.1.2.1 位所在div(bc)*/
+
+#d4 .d4c2 .d4c232 {
+	height: 82px;
+	width: 1400px;
+}
+
+#d4 .d4c2 .d4c232 p,
+#d4 .d4c2 .d4c232 ul,
+#d4 .d4c2 .d4c232 dl,
+#d4 .d4c2 .d4c232 ul li,
+#d4 .d4c2 .d4c232 dl dt,
+#d4 .d4c2 .d4c232 dl dd {
+	float: left;
+}
+
+
+/*清除左侧浮动，目的是dl独占一行，否则会跟在上一行后拼接*/
+
+#d4 .d4c2 .d4c232 dl {
+	clear: left;
+	height: 44px;
+	width: 1094px;
+	margin-left: 86px;
+}
+
+
+/*设置条件筛选第一行文本*/
+
+#d4 .d4c2 .d4c232 p,
+#d4 .d4c2 .d4c232 ul,
+#d4 .d4c2 .d4c232 ul li {
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+}
+
+
+/*设置位置所在的p标签*/
+
+#d4 .d4c2 .d4c232 p {
+	height: 38px;
+	width: 86px;
+}
+
+
+/*设置区域地铁下边框*/
+
+#d4 .d4c2 .d4c232 ul {
+	height: 36px;
+	border-bottom: 2px solid #EFEFEF;
+	width: 1094px;
+}
+
+
+/*区域字体设置*/
+
+#d4 .d4c2 .d4c232 ul li:first-child {
+	height: 34px;
+	border-bottom: 2px solid #FBB100;
+	margin-right: 24px;
+	color: #FBB100;
+}
+
+
+/*设置第二行:地铁或区域行*/
+
+#d4 .d4c2 .d4c232 dl dt {
+	color: #FBB100;
+	line-height: 44px;
+	margin-right: 25px;
+}
+
+#d4 .d4c2 .d4c232 dl dd {
+	line-height: 44px;
+	margin-right: 25px;
+}
+
+
+/*3.1.2.2 总价面积户型用途所在div（bc）*/
+
+#d4 .d4c2 .d4c233 {
+	height: 40px;
+	width: 1400px;
+}
+
+
+/*3.1.2.2.1总价(bc)*/
+
+
+/*3.1.2.2.2面积*/
+
+
+/*3.1.2.2.3户型*/
+
+
+/*3.1.2.2.4用途*/
+
+#d4 .d4c2 .d4c233 dl {
+	clear: both;
+	height: 34px;
+	width: 1400px;
+}
+
+#d4 .d4c2 .d4c233 dl,
+#d4 .d4c2 .d4c233 dl dt,
+#d4 .d4c2 .d4c233 dl dd {
+	float: left;
+	line-height: 34px;
+}
+
+#d4 .d4c2 .d4c233 dl dt {
+	width: 86px;
+	height: 34px;
+	text-align: center;
+}
+
+#d4 .d4c2 .d4c233 dl dd {
+	width: 100px;
+}
+
+
+/*复选框图片*/
+
+#d4 .d4c2 .d4c233 dl dd img {
+	vertical-align: middle;
+	margin-bottom: 3px;
+}
+
+
+/*3.1.2.2.1总价(bc)*/
+
+
+/*3.1.2.2.2面积*/
+
+
+/*第一行和第二行最后一个有文本框的ul标签*/
+
+#d4 .d4c2 .d4c233 dl:nth-of-type(1) dd:last-child,
+#d4 .d4c2 .d4c233 dl:nth-of-type(2) dd:last-child,
+#d4 .d4c2 .d4c233 dl dd:last-child ul {
+	width: 200px;
+}
+
+#d4 .d4c2 .d4c233 dl dd:last-child ul,
+#d4 .d4c2 .d4c233 dl dd:last-child ul li {
+	float: left;
+	margin-left: 5px;
+}
+
+#d4 .d4c2 .d4c233 dl dd:last-child ul li:nth-of-type(1),
+#d4 .d4c2 .d4c233 dl dd:last-child ul li:nth-of-type(3) {
+	width: 42px;
+}
+
+#d4 .d4c2 .d4c233 dl dd:last-child ul li input {
+	width: 42px;
+	height: 22px;
+	border: none;
+	border: 1px solid #C8C8C8;
+	border-radius: 3px;
+	outline: none;
+}
+
+#d4 .d4c2 .d4c233 dl dd:last-child ul li:last-child input {
+	background-color: #5c7596;
+	border-color: #5c7596;
+	color: #FFFFFF;
+}
+
+
+/*3.1.2.3 更多首期链接div*/
+
+#d4 .d4c2 .d4c234 {
+	clear: both;
+	width: 1400px;
+	height: 44px;
+	background-color: #F6F6F6;
+	text-align: center;
+	line-height: 44px;
+}
+
+#d4 .d4c2 .d4c234 img {
+	vertical-align: middle;
+}
+
+
+/*3.1.3条件拼接*/
+
+#d4 .d4c2 .d4c24 {
+	height: 44px;
+	width: 1400px;
+	background-color: #FFFFFF;
+	border-left: 1px solid #E6E6E6;
+	border-right: 1px solid #E6E6E6;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+
+/*条件拼接内的三个div浮动*/
+
+#d4 .d4c2 .d4c24 div {
+	float: left;
+}
+
+
+/*条件文本*/
+
+#d4 .d4c2 .d4c24 .d4c242 {
+	height: 44px;
+	width: 86px;
+	line-height: 44px;
+	text-align: center;
+}
+
+
+/*条件拼接部分div*/
+
+#d4 .d4c2 .d4c24 .d4c243 {
+	height: 44px;
+	color: red;
+}
+
+
+/*条件拼接部分文字*/
+
+#d4 .d4c2 .d4c24 .d4c243 p {
+	float: left;
+	font-size: 12px;
+	border: 1px solid red;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 8px;
+	padding: 0px 6px;
+	border-radius: 3px;
+	margin-right: 15px;
+}
+
+
+/*保存和删除*/
+
+#d4 .d4c2 .d4c24 .d4c244 {
+	height: 44px;
+	width: 96px;
+	line-height: 44px;
+}
+
+#d4 .d4c2 .d4c24 .d4c244 img {
+	vertical-align: middle;
+}
+
+
+/*4.数据部分div两端顶头div(bc)*/
+
+#d5 {
+	margin-top: 30px;
+	width: 100%;
+	color: #535D6A;
+}
+
+
+/*4.1主题内容居中div*/
+
+#d5 .d5c2 {
+	width: 1400px;
+}
+/*4.1.1左侧数据列表部分div*/
+#d5 .d5c2 .d5c22{
+	float: left;
+}
+/*4.1.1.1第一行菜单列表div*/
+#d5 .d5c2 .d5c22 .d5c222 {
+	width: 879px;
+	height: 42px;
+	border-top: 3px solid #FBB100;
+	border-bottom: 1px solid #ECECEC;
+	border-left: 1px solid #ECECEC;
+	border-right: 1px solid #ECECEC;
+}
+
+#d5 .d5c2 .d5c22 .d5c222 ul {
+	width: 870px;
+	height: 42px;
+	float: left;
+}
+
+#d5 .d5c2 .d5c22 .d5c222 ul li {
+	width: 119px;
+	height: 42px;
+	float: left;
+	border-right: 1px solid #ECECEC;
+	line-height: 42px;
+	font-size: 14px;
+	text-align: center;
+}
+
+#d5 .d5c2 .d5c22 .d5c222 ul li:first-child {
+	color: #FBB100;
+}
+
+
+/*4.1.1.2第二行总条数div*/
+
+#d5 .d5c2 .d5c22 .d5c223 {
+	color: #323942;
+	height: 46px;
+	width: 881px;
+	border-bottom: 2px solid #F3F3F3;
+	line-height: 46px;
+	font-size: 12px;
+}
+
+
+/*4.1.1.3数据列表div(bc)*/
+
+#d5 .d5c2 .d5c22 .d5c224 {
+	width: 880px;
+	height: 257px;
+	border-bottom: 2px solid #F3F3F3;
+}
+
+
+/*4.1.1.3.1 数据内容div(bc),inline-block行内块级元素*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242 {
+	display: inline-block;
+	width: 880px;
+	height: 195px;
+	margin-top: 31px;
+	
+}
+
+
+/*4.1.3.1.1 存放图片div*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:first-child {
+	float: left;
+	height: 195px;
+	width: 240px;
+	margin-right: 40px;
+	
+}
+
+
+/*4.1.3.1.2 存放文字内容div(bc)*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child {
+	float: left;
+	height: 195px;
+	width: 600px;
+}
+
+
+/*黑体字标题*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child h3 {
+	height: 42px;
+	width: 600px;
+	line-height: 42px;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child h3 a {
+	color: #323942;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child h3 a:hover {
+	color: #FBB100;
+}
+
+
+/*房子信息(bc)*/
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1) {
+	width: 600px;
+	height: 122px;
+}
+
+
+/*三行文字信息*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child {
+	float: left;
+	height: 122px;
+	font-size: 12px;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child li {
+	height: 34px;
+	line-height: 34px;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child li:first-child {
+	margin-top: 20px;
+}
+
+
+/*图标标签：第一行*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child li i {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-right: 6px;
+	margin-top: 6px;
+	background: url(../image/secondHouse/icon1.png) no-repeat 0px 4px;
+}
+
+
+/*图标标签：第二行*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child li:nth-of-type(2) i {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(../image/secondHouse/icon1.png) no-repeat 0px -28px;
+}
+
+
+/*图标标签：第三行*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:first-child li:nth-of-type(3) i {
+	display: block;
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: url(../image/secondHouse/icon1.png) no-repeat 0px -63px;
+}
+
+
+/*房价所在行*/
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:last-child {
+	float: right;
+	height: 122px;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:last-child li:first-child {
+	margin-top: 20px;
+	height: 60px;
+	line-height: 60px;
+	color: #e8445b;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:last-child li:first-child strong {
+	font-size: 30px;
+}
+
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(1)>ul:last-child li:last-child {
+	height: 26px;
+	line-height: 26px;
+	font-size: 12px;
+}
+
+/*房子标签*/
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(2) {
+	clear: both;
+	width: 600px;
+	height: 24px;
+}
+/*房子标签文字*/
+#d5 .d5c2 .d5c22 .d5c224 .d5c2242>div:last-child>div:nth-of-type(2) span {
+	font-size: 12px;
+	display: block;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	width: 86px;
+	margin-right: 10px;
+	color: #5c7596;
+	background-color: #f1f7ff;
+	border-radius: 5px;
+	float: left;
+}
+
+/*4.1.1.4数据分页所在div*/
+#d5 .d5c2 .d5c22 .d5c225,
+#d5 .d5c2 .d5c22 .d5c225 ul{
+	float: left;
+	height: 122px;
+	width: 800px;
+}
+#d5 .d5c2 .d5c22 .d5c225 ul li{
+	float: left;
+	height: 32px;
+	line-height: 32px;
+	padding: 0px  10px;
+	border: 1px solid #DCDCDC;
+	color: #323942;
+	font-weight: bold;
+	margin-right: 20px;
+	margin-top: 44px;
+}
+#d5 .d5c2 .d5c22 .d5c225 ul li:first-child{
+	margin-left: 120px;
+}
+#d5 .d5c2 .d5c22 .d5c225 ul li a{
+	color: #323942;
+}
+#d5 .d5c2 .d5c22 .d5c225 ul li:hover,
+#d5 .d5c2 .d5c22 .d5c225 ul li a:hover{
+	background-color: #FBB100;
+	color: #FFFFFF;
+}
+/*4.1.2 右侧地图部分div*/
+#d5 .d5c2 .d5c23{
+	float: right;
+}
+iframe{
+	display: block;
+	/*vertical-align: bottom;*/
+}

@@ -1,0 +1,242 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+iframe{
+	/*display: block;*/
+	vertical-align: bottom;
+}
+body>div{
+	height: 60px;
+	width: 100%;
+	background-color: #1B1F24;
+}
+section{
+	width: 100%;
+	/*height:1233px ;*/
+	background-color: #fff;
+}
+/*1.banner图*/
+#d2{
+	height: 450px;
+	width: 100%;
+	background: url(../image/youqinglianjie/f-l-banner.jpg) no-repeat center top;
+}
+/*1.1banner图里的文字*/
+#d2 .d22{
+	width: 436px;
+	height: 136px;
+	text-align: center;
+	position: relative;
+	top: 170px;
+}
+#d2 .d22 p:first-child{
+	width: 360px;
+    height: 70px;
+    margin: 0 auto;
+    font-size: 55px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 549px;
+    letter-spacing: 5px;
+    border-bottom: solid white 1px;
+    
+}
+#d2 .d22 p:nth-child(2){
+	width: 436px;
+    height: 30px;
+}
+#d2 .d22 p:last-child{
+	width: 428px;
+    height: 30px;
+    margin: 0 auto;
+    font-size: 25px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 12px;
+    border-bottom: solid white 1px;
+}
+/*2.中间内容所在div(bc)*/
+#d3{
+	height: 780px;
+	width: 1000px;
+	
+}
+#d3 .d3c1{
+	height:108px;
+	width: 100%;
+}
+/*2.1中间内容所在div上半部分内容(bc)*/
+#d3 .d3c2{
+	height: 312px;
+	width: 1000px;
+}
+/*2.1.1中间内容所在div上半部分内容的友情链接*/
+#d3 .d3c2 .d3c22 i,#d3 .d3c3 .d3c32 i{
+	display: inline-block;
+	float: left;
+	width: 5px;
+	height: 23px;
+	background-color: #fbb100;
+	margin-top: 1px;
+}
+#d3 .d3c2 .d3c22 span,#d3 .d3c3 .d3c32 span{
+	color: #000;
+	font-size: 20px;
+	margin-left: 24px;
+}
+/*2.1.2中间内容所在div上半部分内容的友情链接下的内容*/
+#d3 .d3c2 .d3c23 ol{
+	margin-left: 46px;
+	margin-top: 54px;
+}
+#d3 .d3c2 .d3c23 ol li{
+	margin-bottom: 32px;
+	color: #323942;
+	font-size: 14px;
+	
+}
+
+/*2.2中间内容所在div下半部分内容(bc)*/
+#d3 .d3c3{
+	height: 360px;
+	width: 1000px;
+}
+/*2.2.2中间内容所在div上半部分内容的友情链接下的内容*/
+#d3 .d3c3 .d3c33 ul{
+	list-style-type: none;	
+	margin-left: 30px;
+	margin-top: 54px;
+}
+#d3 .d3c3 .d3c33 ul li{
+	margin-bottom: 48px;
+	font-size: 14px;
+	color: #323942;
+}
+/*==========================================================
+ * 				右侧栏
+ * =========================================================
+ */
+aside ul {
+	width: 36px;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	background-color: #fff;
+	border-left: 1px solid #dcdcdc;
+	z-index: 100;
+	box-shadow: 2px 2px 5px 3px rgba(170,170,170,0.4);
+}
+aside ul li{
+	list-style-type: none;
+	height: 45px;
+	width: 36px;
+	margin-bottom: 10px;
+	position: relative;
+	top:106px;
+}
+aside ul li:first-child{
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -4px;
+}
+aside ul li:first-child:hover {
+	cursor: pointer;
+    background-position: -36px -4px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(2){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -116px;
+}
+aside ul li:nth-child(2):hover{
+	cursor: pointer;
+	background-position: -36px -116px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(3){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -490px;
+}
+aside ul li:nth-child(3):hover {
+	cursor: pointer;
+	background-position: -36px -490px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(4){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -170px;
+}
+aside ul li:nth-child(4):hover {
+	cursor: pointer;
+	background-position: -36px -170px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(5){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -282px;
+}
+aside ul li:nth-child(5):hover {
+	cursor: pointer;
+	background-position: -36px -282px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(6){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -393px;
+}
+aside ul li:nth-child(6):hover {
+	cursor: pointer;
+	background-position: -36px -393px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(7){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -338px;
+}
+aside ul li:nth-child(7):hover {
+	cursor: pointer;
+	background-position: -36px -338px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+aside ul li:nth-child(8){
+	background:url(../image/youqinglianjie/right-bar.png) no-repeat 0px -447px;
+	margin-top: 125px;
+}
+aside ul li:nth-child(8):hover {
+	cursor: pointer;
+	background-position: -36px -447px;
+    background-color: #FF8000;
+    transition: all 1s;
+}
+/*
+ * =========================================================
+ * 				右侧栏
+ * =========================================================*/
+
+/*咨询经纪人*/
+article{
+	width: 240px;
+	height: 85px;
+	background:url(../image/shouye/root/m.png) no-repeat;
+	position: fixed;
+	bottom: 6px;
+	right: 44px;
+}
+article span{
+	display: inline-block;
+	margin-top: 45px;
+	margin-left: 65px;
+	height: 40px;
+	width: 130px;
+	line-height: 40px;
+	float: left;
+}
+article i{
+	display: inline-block;
+	float: left;
+	width: 45px;
+	height: 40px;
+	margin-top: 46px;
+	background:url(../image/youqinglianjie/m_right.png) no-repeat;
+}

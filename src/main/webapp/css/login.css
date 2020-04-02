@@ -1,0 +1,216 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+	list-style-type: none;
+}
+/*为了避免引入头尾,出现间隙问题*/
+body>div{
+	width: 100%;
+}
+body>div>header{
+	width: 100%;
+	height: 60px;
+	background-color: #1b1f24;
+}
+/*2.内容部分*/
+section{
+	height: 600px;
+	width: 100%;
+	background-color: #F1F1F1;
+}
+/*2.1 主题内容居中部分(bc)*/
+section #d2{
+	height:600px ;
+	width:1000px;
+}
+
+/*2.1.1 白色背景内容div*/
+section #d2 .d2c2{
+	height:524px ;
+	width:780px;
+	position: relative;
+	top: 76px;
+	background-color: #FFFFFF;
+}
+
+/*2.1.1.1 
+
+登录标题所在div(bc)*/
+section #d2 .d2c2 .d2c22{
+	height: 140px;
+	width: 656px;
+}
+section #d2 .d2c2 .d2c22 ul{
+	float: left;
+	height: 30px;
+	width: 656px;
+}
+section #d2 .d2c2 .d2c22 ul li{
+	margin-top: 76px;
+	list-style-type: none;
+	float: left;
+	height: 30px;
+	font-size: 24px;
+	line-height: 30px;
+}
+/*设置登录左侧橘色条状的样式*/
+section #d2 .d2c2 .d2c22 ul li:first-child{
+	width:4px;
+	background-color: #FBB100;
+	margin-right: 15px;
+}
+
+/*2.1.1.2 
+
+登录表单和右侧其他登录方式列表所在div(bc)*/
+section #d2 .d2c2 .d2c23{
+	height: 334px;
+	width: 656px;
+}
+
+
+
+/*2.1.1.2.1 左侧表单所在div(bc)*/
+section #d2 .d2c2 .d2c23 .d2c232{
+	float: left;
+	height: 334px;
+	width:416px ;
+	border-right: 1px dashed #F1F1F1;
+	
+}
+/*登录方式所在列表(bc)*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2322{
+	float: left;
+	height: 23px;
+	width: 356px;
+}
+/*设置登录标题下第一行文本（bc）*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2322 li{
+	float: left;
+	height: 23px;
+	line-height: 23px;
+	
+}
+
+/*设置登录标题下第一行文本的第一列*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2322 li:first-child{
+	/*border-bottom: 2px solid #FBB100;*/
+	/*margin-right: 20px;*/
+	/*color: #FBB100;*/
+}
+
+.clickStyle{
+	border-bottom: 2px solid #FBB100;
+	margin-right: 20px;
+	color: #FBB100;
+}
+
+/*表单ul标签设置（bc）*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323{
+	clear: both;
+	float:left ;
+	width: 356px;
+	height: 311px;
+}
+/*设置ul表单的li标签(边框)*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li{
+	height:50px;
+	width: 356px;
+	line-height: 50px;
+}
+
+/*设置手机和密码文本框背景颜色*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(1),
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(2){
+	background-color: #FAFAFA;
+	margin-top: 25px;
+}
+/*设置登录表单的input文本框*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li input{
+	border: none;
+	height: 28px;
+	width: 210px;
+	padding: 5px 0px;
+	background-color: #FAFAFA;
+	outline: none;
+}
+/*设置忘记密码行所在行的边距*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(3){
+	margin-top: 3px;
+}
+/*设置忘记密码行前一个存放验证信息的span标签*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(3) span{
+	color: red;
+	float: left;
+}
+/*设置忘记密码行前一个存放验证信息的label标签*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(3) label{
+	float: right;
+	font-size: 14px;
+	color: #FBB100;
+}
+/*设置登录所在列表的背景和边框*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(4){
+	background-color: #FBB100;
+	border-radius: 7px;
+	text-align: center;
+	margin-top: 13px;
+}
+/*设置登录超链接*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:nth-of-type(4) a{
+	color: #FFFFFF;
+	font-size: 18px;
+	text-decoration: none;
+}
+/*立即注册所在行*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:last-child{
+	text-align: center;
+	font-size: 14px;
+	color:#a1a2a4;
+	line-height: 22px;
+	margin-top: 22px;
+}
+/*立即注册超链接*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:last-child a{
+	text-decoration: none;
+	font-size: 18px;
+	color: #FBB100;
+}
+/*设置立即注册超链接右侧 图片位置*/
+section #d2 .d2c2 .d2c23 .d2c232 ul.d2c2323 li:last-child img{
+	vertical-align: middle;
+	line-height: 50px;
+}
+
+/*2.1.1.2 .2 右侧其他登录方式列表(bc)*/
+section #d2 .d2c2 .d2c23 .d2c233{
+	float: left;
+	height: 334px; 
+	width:239px ;
+	font-size: 14px;
+}
+/*设置登陆方式列表(bc)*/
+section #d2 .d2c2 .d2c23 .d2c233 ul{
+	height: 334px;
+	width: 239px;
+}
+/*设置登录方式列表每行统一的样式*/
+section #d2 .d2c2 .d2c23 .d2c233 ul li{
+	width: 239px;
+	text-align: center;
+}
+/*设置登录方式列表第一行*/
+section #d2 .d2c2 .d2c23 .d2c233 ul li:first-child{
+	height: 40px;
+	color: #535D6A;
+}
+/*设置微信图片所在行第三行*/
+section #d2 .d2c2 .d2c23 .d2c233 ul li:nth-of-type(3){
+	margin-top: 70px;
+	margin-bottom: 10px;
+}
+/*下载app文字颜色*/
+section #d2 .d2c2 .d2c23 .d2c233 ul li:last-child{
+	color: #a1a2a4;
+	font-size: 12px;
+}

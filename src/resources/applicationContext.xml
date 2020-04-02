@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:contest="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <contest:component-scan base-package="cn.kgc" use-default-filters="false">
+        <contest:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"></contest:exclude-filter>
+    </contest:component-scan>
+    <!--引入外部文件，配置数据源-->
+    <!--spring和mabatis整合配置-->
+    <contest:property-placeholder location="classpath:db.properties"></contest:property-placeholder>
+    <bean class="com.mchange.v2.c3p0.ComboPooledDataSource" id="dataSource">
+        <property name="driverClass" value="${driverClass}"></property>
+        <property name="jdbcUrl" value="${url}"></property>
+        <property name="user" value="${user}"></property>
+        <property name="password" value="${password}"></property>
+    </bean>
+    <!--配置扫描器加密和mabatis的接口文件放入到ioc容器中-->
+    <bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sessionFactory">
+        <property name="configLocation" value="classpath:mybatis-config.xml"/>
+        <property name="dataSource" ref="dataSource"/>
+        <!--<property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
+    </bean>
+    <!--批量处理数据设置-->
+    <!--<bean class="org.mybatis.spring.SqlSessionTemplate" id="sqlSession">-->
+        <!--<constructor-arg name="sqlSessionFactory" ref="sessionFactory"/>-->
+        <!--<constructor-arg name="executorType" value="BATCH"/>-->
+    <!--</bean>-->
+    <!--配置扫描器，将mybatis的实现接口实现部分加载到ioc容器中-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="cn.kgc.zzq.ssmcrud.dao"/>
+    </bean>
+    <!--配置事务配置-->
+    <bean class="org.springframework.jdbc.datasource.DataSourceTransactionManager" id="transactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <!--开启基于注解的事务-->
+    <aop:config>
+        <aop:pointcut id="txPoint" expression="execution(* cn.kgc.zzq.ssmcrud.service..*(..))"/>
+        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPoint"/>
+    </aop:config>
+    <tx:advice id="txAdvice" transaction-manager="transactionManager">
+        <tx:attributes>
+            <tx:method name="*"/>
+            <tx:method name="get*" read-only="true"/>
+        </tx:attributes>
+    </tx:advice>
+</beans>

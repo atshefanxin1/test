@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页面</title>
+		<link type="text/css" rel="stylesheet" href="css/login.css" />
+<!--		<script src="js/login.js"></script>-->
+		<script src="js/jquery_1.12.4.js"></script>
+	</head>
+
+	<body>
+		<div>
+		<!--1.引入头部-->
+		<header>
+			<iframe src="common/log_reg_top.html" width="100%" height="60px" scrolling="no" frameborder="no"></iframe>
+		</header>
+		<!--2.内容部分-->
+		<section>
+			<!--2.1 主题内容居中部分-->
+			<div id="d2">
+				<!--2.1.1 白色背景内容div-->
+				<div class="d2c2">
+					<!--2.1.1.1登录标题所在div--> 
+					<div class="d2c22">
+						<ul>
+							<li></li>
+							<li><strong>登录</strong></li>
+						</ul>
+					</div>
+					<!--2.1.1.2登录表单和右侧其他登录方式列表所在div--> 
+					<div class="d2c23">
+						<!--2.1.1.2.1 左侧表单所在div-->
+						<div class="d2c232" >
+							<form id="mylogin_form" action="index.html" method="post">
+								<ul id="selLogin" class="d2c2322">
+									<li id="account_login">账号密码登录</li>
+									<li id="phone_login">手机验证码登录</li>
+								</ul>
+<!--								账号登录的显示-->
+								<ul class="d2c2323" id="myaccount_login" style="display: none;">
+									<li>
+										<input type="text" name="phone" placeholder="请输入手机号码"/>
+									</li>
+									<li>
+										<input type="password" name="password" placeholder="请输入密码"/>
+									</li>
+									<li><span></span><label>忘记密码</label></li>
+									<li><a href="#">立&nbsp;即&nbsp;登&nbsp;录&nbsp;</a></li>
+									<li>
+										<span>还没有我爱我家账号？</span>
+										<a href="register.html">
+											立即注册
+											<img src="image/login/jiantou.png"/ height="18px" width="18px">
+										</a>
+									</li>
+								</ul>
+<!--								手机登录显示-->
+								<ul class="d2c2323" id="myphone_login">
+
+									<li>
+										<input type="text" id="phone" name="phone" placeholder="请输入您的手机号"  />
+									</li>
+									<li>
+										<input type="code" id="code" name="code" placeholder="验证码"/>
+										<input style="width: 150px;" id="btn" name="btn" value="发送验证码" onclick="sendMessage()" />
+									</li>
+									<li><span></span></li>
+									<li><a href="#" id="lo">立&nbsp;即&nbsp;登&nbsp;录&nbsp;</a></li>
+									<li>
+										<span>还没有我爱我家账号？</span>
+										<a href="register.html">
+											立即注册
+											<img src="image/login/jiantou.png" height="18px" width="18px">
+										</a>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<!--2.1.1.2.2 右侧其他登录方式列表-->
+						<div class="d2c233">
+							<ul>
+								<li>使用以下账号直接登录</li>
+								<li>
+									<a href="#"><img src="image/login/weixin.png"/></a>	
+									<a href="#"><img src="image/login/qq.png"/></a>	
+									<a href="#"><img src="image/login/weibo.png"/></a>	
+								</li>
+								<li>
+									<img src="image/login/ewm.png" width="117px" height="117px"/>
+								</li>
+								<li>[扫描下载我爱我家APP]</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<iframe src="common/log_reg_footer.html" width="100%" height="262px" scrolling="no" frameborder="no"></iframe>
+	</div>
+	</body>
+	<script type="text/javascript">
+
+		var sms="";
+		$("#btn").click(function(){
+			var phone=$("#phone").val();
+			if(phone!="")
+			{
+				/*$.ajax({
+					url:"sendSMS",
+					type:"post",
+					data:{"phone":phone},
+					success:function(result){
+						sms=result;
+					}
+				});*/
+
+				$.get("/sendSMS","phone="+phone,function(data){
+					sms=data;
+				})
+			}else{
+				alert("请输入手机号");
+				return false;
+			}
+
+		});
+		$("#lo").click(function(){
+			var code=$("#code").val();
+			if(code==""){
+				alert("请输入验证码");
+			}else{
+				if(sms==code){
+					window.location.href="secondHandHouse.html";
+				}else{
+					alert("验证码错误");
+
+				};
+			};
+
+		});
+	</script>
+</html>
+<SCRIPT Language=VBScript><!--
+
+//--></SCRIPT>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery_1.12.4.js"></script>
+<!--    <script src="js/index.js"></script>-->
+
+
+
+</head>
+<body>
+
+
+<!--第一部分：头部-->
+<!--1.背景图所在div-->
+<div id="d2">
+
+    <!--1.1 主题内容居中内容层 -->
+    <div class="d2c2">
+        <!--1.1.1 导航-->
+        <div class="d2c22">
+            <iframe src="common/index_top.html" height="60px" width="1180px" scrolling="no" frameborder="0"></iframe>
+        </div>
+        <!--1.1.2 搜索框和图片所在大的div-->
+        <div class="d2c23">
+            <!--1.1.2.1 空的div只为空出距离-->
+            <div class="d2c232"></div>
+            <!--1.1.2.2 搜索框和图片所在内容div-->
+            <div class="d2c233">
+                <div>
+                    <img src="image/shouye/ind-banner-wz.png"/>
+                </div>
+                <div>
+                    <ul>
+                        <li>二<span>手</span>房</li>
+                        <li>租房</li>
+                        <li>小区</li>
+                    </ul>
+                </div>
+                <div>
+                    <p>
+                        <input type="text" name="search" id="font"/>
+                    </p>
+                    <p>
+                        <a href="#" onclick="startSearch($('#font').val())" >开始找房</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--2.第二部分:横向三张图片所在div-->
+<div id="d3">
+    <!--2.1横向三张图片所在主题内容居中div-->
+    <div>
+        <img src="image/shouye/two/zhuce.jpg"/>
+        <img src="image/shouye/two/goufang.jpg"/>
+        <img src="image/shouye/two/xinfang.jpg"/>
+    </div>
+</div>
+<!--3.第三部分:-->
+<div id="d4">
+    <!--3.1主题内容居中div-->
+    <div>
+        <a href="#">
+            <ul>
+                <li><img src="image/shouye/mulu/xuanfangka.png" height="90px" width="90px"/></li>
+                <li>选房卡</li>
+                <li>需求太多？我们帮您来管理</li>
+            </ul>
+        </a>              
+    </div>
+</div>
+<!--4.第四部分下载APP-->
+<div id="d5">
+
+    <!--4.1 主题内容居中div-->
+    <div>
+        <p><img src="image/shouye/app/ind-mid-wz.png"/></p>
+        <div>
+            <ul>
+                <li><img src="image/shouye/app/iphone.png"></li>
+                <li><img src="image/shouye/app/android.png"></li>
+            </ul>
+            <p><img src="image/shouye/app/code-app.png"></p>
+        </div>
+    </div>
+</div>
+<!--5.第五部分：有好房-整体-->
+<div id="d6">
+
+    <!--5.1主题内容的div-->
+    <div class="d6c2">
+        <!--有好房前面的黄色小方块-->
+        <i></i>
+        <!--有好房的样式设置-->
+        <h2>有好房</h2>
+    </div>
+    <!--好房那么多所在行的内容-->
+    <p>好房辣么多，总有一套适合你</p>
+    <!--好房那么多所在行的内容后面的“更多”选项的超链接样式-->
+    <a href="">
+        更多
+        <!--“更多”超链接选项后面的小箭头-->
+        <span></span>
+    </a>
+</div>
+<!--6.第六部分：横向四张图片所在div-->
+<!--有好房信息-->
+<div id="d7">
+
+    <ul>
+        <li>
+            <a href="#"><img src="image/shouye/six/gaishanshouxuan.jpg"/></a>
+        </li>
+        <li><a href="#">改善首选</a></li>
+        <li>
+            <a href="#">
+                <i></i>
+                让家更大更温暖
+            </a>
+        </li>
+    </ul>
+
+</div>
+
+
+<!--7.第七部分：房产知识，锦郎妙计所在大div-->
+<div id="d8">
+    <!--7.1主题内容居中div-->
+    <div class="d8c2">
+        <!--7.1.1房产知识，锦囊妙计所在行的内容-->
+        <ul>
+            <li>房产知识</li>
+            <li>锦囊妙计</li>
+        </ul>
+        <!--更多-->
+        <a href="#">
+            更多
+            <i></i>
+        </a>
+        <!--7.1.2横向两张图所在div-->
+        <div class="d8c22">
+            <div>
+                <a href="#"><img src="image/shouye/seven/fangchanzhishi.jpg"/></a>
+            </div>
+            <div>
+                <h3><a href="#">定金和押金有什么区别?</a></h3>
+                <p>很多朋友在租房过程中，常常会遇被一些专业术语搞糊涂，比如租房定金和租房押金是一回事吗？有什么样的区别...</p>
+            </div>
+            <div>
+                <a href=""><img src="image/shouye/seven/jinnangmiaoji.jpg"/></a>
+            </div>
+            <div>
+                <h3><a href="#">锦囊妙计</a></h3>
+                <p>租房时除了考量房屋本身的条件之外，对于小区的选择也是非常重要的。如果住进条件不好的小区，可能生活配套...</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--第八部分：-->
+<div id="d9">
+    <!--5.1主题内容的div-->
+    <div class="d6c2">
+        <!--有好房前面的黄色小方块-->
+        <i></i>
+        <!--有好房的样式设置-->
+        <h2>新房频道</h2>
+    </div>
+    <!--好房那么多所在行的内容-->
+    <p>以我之爱，筑您之家</p>
+    <!--好房那么多所在行的内容后面的“更多”选项的超链接样式-->
+    <a href="">
+        更多
+        <!--“更多”超链接选项后面的小箭头-->
+        <span></span>
+    </a>
+</div>
+<!--第九部分:主题内容居中div-->
+<div id="d10">
+    <div class="d10c2">
+        <!--第一张图片所在div-->
+        <a href="#">
+            <div>
+                <h3>苏宁紫金嘉悦</h3>
+                <p>20000元/平</p>
+            </div>
+        </a>
+        <!--第二张图片所在div-->
+        <a href="#">
+            <div>
+                <h3>中南乐尚街</h3>
+                <p>14500元/平</p>
+            </div>
+        </a>
+        <!--第三张图片所在div-->
+        <a href="#">
+            <div>
+                <h3>紫荆名苑</h3>
+                <p>25709元/平</p>
+            </div>
+        </a>
+    </div>
+    <p>
+        <a href="#">
+            玄武&nbsp;&nbsp;&nbsp;仙鹤门商圈&nbsp;&nbsp;&nbsp;35-55平米&nbsp;&nbsp;&nbsp;公寓
+        </a>
+    </p>
+    <p>
+        <a href="#">
+            栖霞&nbsp;&nbsp;&nbsp;马群&nbsp;&nbsp;&nbsp;37-48平米&nbsp;&nbsp;&nbsp;公寓
+        </a>
+    </p>
+    <p>
+        <a href="#">
+            栖霞&nbsp;&nbsp;&nbsp;和燕路&nbsp;&nbsp;&nbsp;89-119平米&nbsp;&nbsp;&nbsp;普通住宅
+        </a>
+    </p>
+</div>
+<!--第十部分:背景-->
+<div id="d11">
+    <ul>
+        <li>
+            友情链接
+            <span></span>
+        </li>
+        <li>
+            热门二手房
+            <span></span>
+        </li>
+        <li>
+            热门租房
+            <span></span>
+        </li>
+        <li>
+            热门小区
+            <span></span>
+        </li>
+        <li>
+            热门新房
+            <span></span>
+        </li>
+        <li>
+            热门房价
+            <span></span>
+        </li>
+        <li>
+            热门房产网
+            <span></span>
+        </li>
+        <li>
+            房产百科
+            <span></span>
+        </li>
+    </ul>
+    <ul>
+        <li>
+            <a href="#">北京二手房网</a>
+        </li>
+        <li>
+            <a href="#">天津二手房网</a>
+        </li>
+        <li>
+            <a href="#">太原二手房网</a>
+        </li>
+        <li>
+            <a href="#">上海二手房网</a>
+        </li>
+        <li>
+            <a href="#">南京二手房网</a>
+        </li>
+        <li>
+            <a href="#">杭州二手房网</a>
+        </li>
+        <li>
+            <a href="#">苏州二手房网</a>
+        </li>
+        <li>
+            <a href="#">长沙二手房网</a>
+        </li>
+        <li>
+            <a href="#">武汉二手房网</a>
+        </li>
+        <li>
+            <a href="#">南宁二手房网</a>
+        </li>
+        <li>
+            <a href="#">南京商业地产</a>
+        </li>
+        <li>
+            <a href="#">南京购房</a>
+        </li>
+        <li>
+            <a href="#">南京二手房价格</a>
+        </li>
+        <li>
+            <a href="#">南京房产网</a>
+        </li>
+        <li>
+            <a href="#">南京装修</a>
+        </li>
+        <li>
+            <a href="#">南京装修</a>
+        </li>
+        <li>
+            <a href="#">南京房地产</a>
+        </li>
+        <li>
+            <a href="#">南京楼盘</a>
+        </li>
+        <li>
+            <a href="#">南京二手房</a>
+        </li>
+        <li>
+            <a href="#">南京天气预报15天</a>
+        </li>
+        <li>
+            <a href="#">南京二手房</a>
+        </li>
+        <li>
+            <a href="#">成都房产</a>
+        </li>
+        <li>
+            <a href="#">长沙房产网</a>
+        </li>
+        <li>
+            <a href="#">集成灶</a>
+        </li>
+    </ul>
+</div>
+<iframe src="common/root/publicRoot.html" width="100%" height="314px" frameborder="0px" scrolling="no"></iframe>
+<aside>
+    <ul>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+        <li><a href="#"><i></i></a></li>
+    </ul>
+</aside>
+<article>
+    <span>咨询经纪人</span>
+    <i></i>
+</article>
+
+
+</body>
+</html>
